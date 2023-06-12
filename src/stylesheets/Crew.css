@@ -3,6 +3,11 @@
     text-decoration-thickness: 3px;
 }
 
+#selector {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
 
 .divider {
     width: 100%;
@@ -163,15 +168,13 @@
     }
 
     .crew {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
         align-items: center;
         text-align: start;
     }
 
-    #selector {
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-    }
 
     .crew ul li {
         width: 25px;

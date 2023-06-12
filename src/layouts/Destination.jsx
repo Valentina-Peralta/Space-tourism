@@ -15,8 +15,8 @@ function Destination() {
     return (
         <div className='destination'>
             <div className='planet-wrapper'>
-                <h2>01 PICK YUR DESTINATION</h2>
-                <div className="planet">
+                <h2 id='pick'><span className='grey'>01</span> PICK YUR DESTINATION</h2>
+                <div className="planet" id='planet'>
                     {destination === 'moon' ? <img src={moonImg} alt="" />
                         : destination === 'mars' ? <img src={marsImg} alt="" />
                             : destination === 'europa' ? <img src={europaImg} alt="" />

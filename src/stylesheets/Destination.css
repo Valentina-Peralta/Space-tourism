@@ -148,13 +148,13 @@
         justify-content: space-around;
     }
 
-    .planet {
+    #planet {
         width: 445px;
         margin-top: 4rem;
     }
 
-    .planet-wrapper h2 {
-        font-size: 32px;
+    #pick {
+        font-size: 28px;
     }
 
     .info {
@@ -197,13 +197,7 @@
         width: 25px;
     }
 
-    .meet {
-        font-size: 28px;
-        font-weight: 400;
-        width: 600px;
-        background-color: red;
 
-    }
 
     .crew h1 {
         font-size: 32px;

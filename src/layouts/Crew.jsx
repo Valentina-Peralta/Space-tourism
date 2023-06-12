@@ -16,7 +16,7 @@ function Destination() {
         <div className='destination crew-container'>
 
             <div className="crew">
-                <h2 id="meet">02 MEET YOUR CREW</h2>
+                <h2 id="meet"> <span className='grey'>02</span> MEET YOUR CREW</h2>
                 <div className="crew-img">
                     {crew === 'commander' ? <img src={commander} alt="" />
                         : crew === 'missionSpecialist' ? <img src={missionSpecialist} alt="" />

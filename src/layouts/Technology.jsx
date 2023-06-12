@@ -13,7 +13,8 @@ function Technology() {
         <div className='technology'>
             <div className="img-wrapper">
                 <h1>
-                    03 SPACE LAUNCH 101
+                    <span className='grey'>03</span>
+                    SPACE LAUNCH 101
                 </h1>
                 {tech === 'launchVehicle' ? <img src={launchImg} alt="" />
                     : tech === 'spaceport' ? <img src={spaceportImg} alt="" />
