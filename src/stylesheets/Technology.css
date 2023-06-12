@@ -1,0 +1,153 @@
+.technology {
+    background-image: url('../assets/technology/background-technology-mobile.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #D0D6F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem 2rem 4rem 2rem;
+
+    text-align: center;
+    gap: 1rem;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.img-wrapper h1 {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.img-wrapper img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
+.selector {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem;
+}
+
+.selector div {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.selector .active {
+    text-decoration: none;
+    background-color: white;
+    color: #0B0D17;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.info h3 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+
+}
+
+.info h2 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+
+}
+
+.info p {
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0 2rem;
+}
+
+/*TABLETS*/
+@media only screen and (min-width:391px) {
+    .technology {
+        background-image: url('../assets/technology/background-technology-tablet.jpg');
+    }
+}
+
+/*DESKTOP*/
+@media only screen and (min-width:769px) {
+    .technology {
+        background-image: url('../assets/technology/background-technology-desktop.jpg');
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .img-wrapper {
+        width: 515px;
+        height: 527px;
+        align-items: start;
+    }
+
+    .img-wrapper h1 {
+        font-size: 34px;
+
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info-wrapper {
+        flex-direction: row;
+    }
+
+    .selector {
+        flex-direction: column;
+    }
+
+    .selector div {
+        width: 80px;
+        font-size: 32px;
+    }
+
+    .info {
+        align-items: start;
+        width: 470px;
+        margin-left: 4rem;
+    }
+
+    .info h3 {
+        font-size: 16px;
+    }
+
+    .info h2 {
+        font-size: 56px;
+    }
+
+    .info p {
+        padding: 0;
+        font-size: 18px;
+
+    }
+}
