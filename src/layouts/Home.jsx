@@ -1,5 +1,8 @@
 import React from 'react'
 import '../stylesheets/Home.css'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls, Stage } from '@react-three/drei'
+import Earth from '../components/Earth'
 
 function Home() {
     return (
@@ -16,8 +19,20 @@ function Home() {
                 </p>
             </div>
             <div className="explore">
-                <p>EXPLORE</p>
+
+                <Canvas style={{ width: '100%' }}>
+                    <directionalLight />
+                    <Stage environment="night" intensity={0.6}>
+                        <Earth />
+                    </Stage>
+                    <OrbitControls
+                        enableZoom={false}
+                        autoRotate={true}
+                    />
+                </Canvas>
             </div>
+
+
         </div>
     )
 }

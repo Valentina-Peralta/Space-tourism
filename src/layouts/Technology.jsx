@@ -4,10 +4,17 @@ import data from '../data'
 import launchImg from '../assets/technology/image-launch-vehicle-portrait.jpg'
 import spaceportImg from '../assets/technology/image-spaceport-portrait.jpg'
 import spaceCapsuleImg from '../assets/technology/image-space-capsule-portrait.jpg'
+import Spaceport from '../components/Spaceport'
+import Launch from '../components/Launch'
+import Capsule from '../components/Capsule'
+import { Canvas } from '@react-three/fiber'
+import { CameraControls, OrbitControls, PerspectiveCamera, Stage } from '@react-three/drei'
+
+
 function Technology() {
     const [tech, setTech] = useState('launchVehicle')
     const selectedTech = data.technology[tech]
-
+    console.log(tech)
     return (
 
         <div className='technology'>
@@ -20,6 +27,27 @@ function Technology() {
                     : tech === 'spaceport' ? <img src={spaceportImg} alt="" />
                         : <img src={spaceCapsuleImg} alt="" />
                 }
+                {/* <Canvas style={{ width: '400px' }}>
+                    <directionalLight />
+                    <Stage
+                        environment="city" intensity={0.6}>
+                        {tech === 'launchVehicle' ? <Launch />
+                            : tech === 'spaceport' ? <Spaceport />
+                                : <Capsule
+                                />
+                        }
+                    </Stage>
+
+                    <OrbitControls
+                        maxZoom={0.2}
+                        enableZoom={false}
+                        autoRotate={true}
+                        rotateSpeed={0.3} // Ajusta la velocidad de rotación de la cámara según tus necesidades
+                    />
+                    <perspectiveCamera makeDefault
+                        position={[5, 5, 5]} />
+                </Canvas>
+ */}
             </div>
             <div className="info-wrapper">
                 <div className="selector">

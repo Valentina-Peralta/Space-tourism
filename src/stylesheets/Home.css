@@ -1,5 +1,6 @@
 .home {
-    background-image: url('../assets/home/background-home-mobile.jpg');
+    /*     background-image: url('../assets/home/background-home-mobile.jpg');
+ */
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -9,12 +10,13 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: absolute;
 }
 
 .main {
     margin: 5rem 2rem;
     text-align: center;
-    height: 276px;
+    height: 24px;
     display: flex;
     flex-direction: column;
 
@@ -43,9 +45,13 @@
 }
 
 .explore {
-    background-color: white;
+    /*     background-color: white;
     height: 150px;
     width: 150px;
+ */
+    width: 80vw;
+    aspect-ratio: 1/1;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,14 +62,14 @@
     font-size: 20px;
     color: #0B0D17;
     letter-spacing: 1.25px;
-    font-family: 'Bellefair', serif;
 
 }
 
 /*TABLETS*/
 @media only screen and (min-width:391px) {
     .home {
-        background-image: url('../assets/home/background-home-tablet.jpg');
+        /*         background-image: url('../assets/home/background-home-tablet.jpg');
+ */
     }
 
 }
@@ -71,7 +77,8 @@
 /*DESKTOP*/
 @media only screen and (min-width:769px) {
     .home {
-        background-image: url('../assets/home/background-home-desktop.jpg');
+        /*         background-image: url('../assets/home/background-home-desktop.jpg');
+ */
         flex-direction: row;
         align-items: flex-end;
         padding-bottom: 130px;
@@ -97,9 +104,10 @@
     }
 
     .explore {
-        width: 275px;
+        /*         width: 275px;
         height: 275px;
-
+ */
+        width: 30vw;
     }
 
     .explore p {

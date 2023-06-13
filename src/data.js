@@ -10,8 +10,8 @@ const data = {
             distance: "225 mil. km",
             time: "9 months"
         },
-        europa: {
-            description: "  The smallest of the four Galilean moons orbiting Jupiter, Europa is a  winter lover's dream. With an icy surface, it's perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug  wintery cabin. ",
+        callisto: {
+            description: "  The second largest moon orbiting Jupiter, Callisto is a  winter lover's dream. With an icy surface, it's perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug  wintery cabin. ",
             distance: "628 mil. km",
             time: "3 years"
         },
