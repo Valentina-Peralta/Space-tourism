@@ -7,11 +7,15 @@ Source: https://sketchfab.com/3d-models/earth-3d-model-7ee4815a381749a2a6c2db669
 Title: Earth 3D model
 */
 
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
   const { nodes, materials } = useGLTF('/earth-transformed.glb')
+  console.log(materials.Clouds.roughness)
+  useEffect(() => {
+    materials.Clouds.roughness = 1
+  }, [])
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_3.geometry} material={materials.Clouds} position={[-9.954, -10.04, 9.954]} rotation={[-Math.PI / 2, 0, 0]} />

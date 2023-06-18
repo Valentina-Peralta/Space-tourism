@@ -7,11 +7,15 @@ Source: https://sketchfab.com/3d-models/the-moon-9916fcec59f04b07b3e8d7f077dc3de
 Title: The Moon
 */
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
   const { nodes, materials } = useGLTF('/moon-transformed.glb')
+  useEffect(() => {
+    materials.Material__50.roughness = 1
+
+  }, [])
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.defaultMaterial.geometry} material={materials.Material__50} />

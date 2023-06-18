@@ -3,7 +3,6 @@ import '../stylesheets/Home.css'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Stage } from '@react-three/drei'
 import Earth from '../components/Earth'
-
 function Home() {
     return (
         <div className='home'

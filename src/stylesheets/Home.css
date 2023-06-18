@@ -72,6 +72,13 @@
  */
     }
 
+    .explore {
+        /*         width: 275px;
+        height: 275px;
+ */
+        width: 50vw;
+    }
+
 }
 
 /*DESKTOP*/
