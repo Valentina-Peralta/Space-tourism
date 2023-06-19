@@ -18,3 +18,18 @@ a {
 .grey {
   color: grey;
 }
+
+.video-background {
+  display: none;
+}
+
+@media only screen and (min-width:769px) {
+
+  .img-background {
+    display: none;
+  }
+
+  .video-background {
+    display: block;
+  }
+}
